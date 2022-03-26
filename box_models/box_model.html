@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box_modek</title>
+  <style>
+/* margin is outside the box, while padding is inside the box */
+/* we use the css reset'*' to reset original properties of css */
+*{
+  /* to allow for the paddin to take effect without taking from the box you can add the box-sizing property */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box{
+  background: #f4f4f4;
+  border: 2px #777 solid;
+  width: 500px;
+  /* paddin on all sides */
+  padding: 20px   ;
+  /* padding per size */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  /* padding shorthand */
+  padding: 10px 20px 10px 20px;
+  /* padding shorthand=top+bottom,left+right */
+  padding: 10px 20px;
+  /* margin on all sides */
+  /* you can also apply the effect used in padding in margin */
+
+  margin: 20px;
+}
+/* to add spacingg in-between the h3 and the paragraph we use the formula below */
+.box h3{
+  /* margin */
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>box</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="box">
+    <h3>box</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+</body>
+</html>
